@@ -1,0 +1,117 @@
+.navDiv{
+    width: 100%;
+    height: 65px;
+    background-color: blue;
+    -webkit-backdrop-filter: blur(4px) saturate(4);
+    backdrop-filter: blur(4px) saturate(4);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.logo{
+    width: 18%;
+    height: 70%;
+    border: solid red;
+}
+.navFeatures{
+    width: 78%;
+    height: 100%;
+    border: solid bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 20px;
+    list-style: none;
+}
+.navFeatures a{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+    padding: 3px;
+    font-weight: 500;
+}
+.navFeatures a:hover{
+    color: whitesmoke;
+}
+
+#checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(176, 92, 255);
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+
+  @media screen and (max-width: 700px) {
+    .toggle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .navFeatures{
+        width: 55%;
+        height: 100%;
+        background-color: rgb(87, 86, 86);
+        display: flex;
+        align-items: center;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-right: 20px;
+    }
+    .navFeatures a{
+        text-decoration: none;
+        color: black;
+    }
+  }
