@@ -23,7 +23,7 @@ export const Navbar = () => {
             <li>Home</li>
           </NavLink>
           <NavLink
-          to="///"
+          to="/"
            style={({ isActive }) => {
             return isActive ? { color: "white" } : { color: "black" };
           }}
@@ -58,9 +58,9 @@ export const Navbar = () => {
 
         <input type="checkbox" id="checkbox" onClick={toggleMenu} />
         <label for="checkbox" class="toggle">
-          <div class="bars" id="bar1"></div>
-          <div class="bars" id="bar2"></div>
-          <div class="bars" id="bar3"></div>
+          <div className="bars" id="bar1"></div>
+          <div className="bars" id="bar2"></div>
+          <div className="bars" id="bar3"></div>
         </label>
 
         {isOpen && (
