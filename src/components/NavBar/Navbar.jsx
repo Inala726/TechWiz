@@ -13,9 +13,10 @@ export const Navbar = () => {
     <>
       <div className="navDiv">
         <div className="logo">Lovely</div>
-        <div className="navFeatures">
+
+        <ul className="navFeatures">
           <NavLink
-          to="/"
+            to="/"
             style={({ isActive }) => {
               return isActive ? { color: "white" } : { color: "black" };
             }}
@@ -23,65 +24,53 @@ export const Navbar = () => {
             <li>Home</li>
           </NavLink>
           <NavLink
-          to="/"
-           style={({ isActive }) => {
-            return isActive ? { color: "white" } : { color: "black" };
-          }}
+            to="/services"
+            style={({ isActive }) => {
+              return isActive ? { color: "white" } : { color: "black" };
+            }}
           >
-            <li>inala</li>
-          </NavLink>
-          <NavLink 
-          to="//"
-           style={({ isActive }) => {
-            return isActive ? { color: "white" } : { color: "black" };
-          }}
-          >
-            <li>inala</li>
+            <li>Services</li>
           </NavLink>
           <NavLink
-          to="/aboutUs"
-           style={({ isActive }) => {
-            return isActive ? { color: "white" } : { color: "black" };
-          }} 
+            to="/aboutUs"
+            style={({ isActive }) => {
+              return isActive ? { color: "white" } : { color: "black" };
+            }}
           >
             <li>About Us</li>
           </NavLink>
           <NavLink
-          to="/contactUs"
-           style={({ isActive }) => {
-            return isActive ? { color: "white" } : { color: "black" };
-          }} 
+            to="/contactUs"
+            style={({ isActive }) => {
+              return isActive ? { color: "white" } : { color: "black" };
+            }}
           >
             <li>Contact Us</li>
           </NavLink>
-        </div>
+        </ul>
 
         <input type="checkbox" id="checkbox" onClick={toggleMenu} />
-        <label for="checkbox" class="toggle">
+        <label htmlFor="checkbox" className="toggle">
           <div className="bars" id="bar1"></div>
           <div className="bars" id="bar2"></div>
           <div className="bars" id="bar3"></div>
         </label>
 
         {isOpen && (
-          <div className="navFeatures">
-            <Link>
-              <li>inala</li>
+          <ul className="navFeatures dropdown">
+            <Link to="/">
+              <li>Home</li>
             </Link>
-            <Link>
-              <li>inala</li>
+            <Link to="/services">
+              <li>Services</li>
             </Link>
-            <Link>
-              {" "}
-              <li>inala</li>
-            </Link>
-            <Link>
+            <Link to="/aboutUs">
               <li>About Us</li>
             </Link>
-            <Link>
+            <Link to="/contactUs">
               <li>Contact Us</li>
             </Link>
-          </div>
+          </ul>
         )}
       </div>
     </>
