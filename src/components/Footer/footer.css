@@ -1,29 +1,43 @@
 .footerDiv{
-    width: 100%;
-    height: 440px;
+    /* width: 100%; */
+    width: 85%;
+    height: 370px;
+    /* background-color: rgb(217, 181, 252); */
+    border-top: solid 2px rgb(217, 181, 252);
+    margin-top: 300px;
+    /* border-bottom: solid red; */
   }
   .midDiv{
     width: 100%;
-    height: 390px;
+    height: 320px;
+    display: flex;
   }
   .mid{
-    width: 25%;
+    width: 24%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding-top: 70px;
+    gap: 15px;
+    /* border: solid black; */
+  }
+  .mid a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(48, 48, 48);
   }
   .footerlogo{
     width: 80%;
   }
   .icon{
     width: 100%;
-    height: 25px;
+    height: 35px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
+    gap: 20px;
+    font-size: 17px;
   }
   .last{
     width: 100%;
@@ -31,4 +45,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: rgb(49, 49, 49); */
+    /* color: white; */
+  }
+
+  @media screen and (max-width: 700px) {
+    .footerDiv{
+        height: 550px;
+    }
+    .midDiv{
+        height: 530px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mid{
+        width: 100%;
+        padding-left: 25px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .footerDiv{
+        height: 800px;
+    }
+     .midDiv{
+        height: 770px;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 35px;
+     }
+     .last{
+        font-size: 13px;
+     }
   }
