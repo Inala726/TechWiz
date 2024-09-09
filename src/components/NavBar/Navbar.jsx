@@ -58,18 +58,26 @@ export const Navbar = () => {
 
         {isOpen && (
           <ul className="navFeatures dropdown">
-            <Link to="/">
-              <li>Home</li>
+             <li>
+            <Link to="/" className="navList">
+            Home
             </Link>
-            <Link to="/services">
-              <li>Services</li>
+            </li>
+            <li>
+            <Link to="/services" className="navList">
+              Services
             </Link>
-            <Link to="/aboutUs">
-              <li>About Us</li>
+            </li>
+            <li>
+            <Link to="/aboutUs" className="navList">
+              About Us
             </Link>
-            <Link to="/contactUs">
-              <li>Contact Us</li>
+            </li>
+            <li>
+            <Link to="/contactUs" className="navList">
+              Contact Us
             </Link>
+            </li>
           </ul>
         )}
       </div>
