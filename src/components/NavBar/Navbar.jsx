@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <>
       <div className="navDiv">
-        <div className="logo">Lovely</div>
+        <div className="logo" style={{fontWeight: "bold"}}>TechWiz</div>
 
         <ul className="navFeatures">
           <NavLink

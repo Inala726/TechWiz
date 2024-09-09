@@ -108,11 +108,11 @@
     transform: rotate(180deg);
   }
   .navList{
-    width: 60%;
-    height: 70px;
-    padding-top: 10px;
+    width: 50%;
+    height: 75px;
+    padding-top: 8px;
     padding-left: 25px;
-    /* border: solid 2px; */
+    border-bottom: solid 1px #ddd;
     /* background-color: green; */
   }
   .navList::after{
@@ -180,6 +180,7 @@
         width: 65.5%;
         height: 100vh;
         background-color: rgb(87, 86, 86);
+        padding-left: 10px;
         position: fixed;
         display: flex;
         flex-direction: column;
