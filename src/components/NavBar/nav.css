@@ -1,7 +1,11 @@
 .navDiv{
     width: 100%;
     height: 65px;
-    background-color: blue;
+    color: black;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: transparent;
     -webkit-backdrop-filter: blur(4px) saturate(4);
     backdrop-filter: blur(4px) saturate(4);
     display: flex;
@@ -12,12 +16,14 @@
 .logo{
     width: 18%;
     height: 70%;
-    border: solid red;
+    /* border: solid red; */
+    text-align: center;
+    padding-top: 10px;
 }
 .navFeatures{
     width: 78%;
     height: 100%;
-    border: solid bisque;
+    /* border: solid bisque; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,8 +38,20 @@
     padding: 3px;
     font-weight: 500;
 }
-.navFeatures a:hover{
+.dropdown li:hover{
     color: whitesmoke;
+}
+.dropdown li{
+  list-style: none;
+}
+.navList{
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+  font-weight: 500;
+}
+.navFeatures li a:hover{
+  color: whitesmoke;
 }
 
 #checkbox {
@@ -41,7 +59,7 @@
   }
   
   .toggle {
-    position: relative;
+    /* position: relative; */
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -53,7 +71,8 @@
   .bars {
     width: 100%;
     height: 4px;
-    background-color: rgb(176, 92, 255);
+    /* background-color: rgb(176, 92, 255); */
+    background-color: black;
     border-radius: 4px;
   }
   
@@ -91,27 +110,111 @@
     transition-duration: .5s;
     transform: rotate(180deg);
   }
+  .navList{
+    width: 50%;
+    height: 75px;
+    padding-top: 8px;
+    padding-left: 25px;
+    border-bottom: solid 1px #ddd;
+    /* background-color: green; */
+  }
+  .navList::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+  }
+  .navList:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    /* transition: left 3s ease-in-out, right; */
+  } 
+  .navList li{
+    font-size: 21px;
+  }
+
+  @keyframes slideDown {
+    from{
+        transform: translateX(80%)
+    }
+    to{
+        transform: translateX(0%);
+    }
+  }
+  
+
+  @media screen and (max-width: 900px) {
+    .logo{
+      width: 25%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .logo{
+      width: 28%;
+    }
+  }
 
   @media screen and (max-width: 700px) {
+    .navDiv{
+      gap: 60%;
+    }
     .toggle{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 100;
     }
     .navFeatures{
-        width: 55%;
-        height: 100%;
+      display: none;
+    }
+    .logo{
+      width: 30%;
+      height: 90%;
+    }
+    .dropdown{
+        width: 65.5%;
+        height: 100vh;
         background-color: rgb(87, 86, 86);
+        padding-left: 10px;
+        position: fixed;
         display: flex;
-        align-items: center;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        padding-top: 90px;
+        /* align-items: center; */
+        /* justify-content: center; */
         gap: 20px;
         padding-right: 20px;
+        top: 0;
+        left: 34.5%;
+        border: none;
+        transition: right 0.3s ease-in-out;
+        animation-name: slideDown;
+        animation-duration: 0.4s;
     }
     .navFeatures a{
         text-decoration: none;
         color: black;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .dropdown{
+      left: 30%;
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .dropdown{
+      left: 24%;
+      width: 76%;
     }
   }
