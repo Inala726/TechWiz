@@ -18,7 +18,7 @@ export const Navbar = () => {
           <NavLink
             to="/"
             style={({ isActive }) => {
-              return isActive ? { color: "white" } : { color: "black" };
+              return isActive ? { color: "blue" } : { color: "black" };
             }}
           >
             <li>Home</li>
@@ -26,7 +26,7 @@ export const Navbar = () => {
           <NavLink
             to="/services"
             style={({ isActive }) => {
-              return isActive ? { color: "white" } : { color: "black" };
+              return isActive ? { color: "blue" } : { color: "black" };
             }}
           >
             <li>Services</li>
@@ -34,7 +34,7 @@ export const Navbar = () => {
           <NavLink
             to="/aboutUs"
             style={({ isActive }) => {
-              return isActive ? { color: "white" } : { color: "black" };
+              return isActive ? { color: "blue" } : { color: "black" };
             }}
           >
             <li>About Us</li>
@@ -42,7 +42,7 @@ export const Navbar = () => {
           <NavLink
             to="/contactUs"
             style={({ isActive }) => {
-              return isActive ? { color: "white" } : { color: "black" };
+              return isActive ? { color: "blue" } : { color: "black" };
             }}
           >
             <li>Contact Us</li>
@@ -57,27 +57,31 @@ export const Navbar = () => {
         </label>
 
         {isOpen && (
-          <ul className="navFeatures dropdown">
-             <li>
+          <ul className="dropdown">
             <Link to="/" className="navList">
+            <li>
             Home
-            </Link>
             </li>
+            </Link>
+          
+            <Link to="/services" className="navList"> 
             <li>
-            <Link to="/services" className="navList">
               Services
+              </li>
             </Link>
-            </li>
-            <li>
+            
             <Link to="/aboutUs" className="navList">
-              About Us
-            </Link>
-            </li>
             <li>
-            <Link to="/contactUs" className="navList">
-              Contact Us
+              About Us
+              </li>
             </Link>
-            </li>
+           
+            <Link to="/contactUs" className="navList">
+            <li>
+              Contact Us
+              </li>
+            </Link>
+           
           </ul>
         )}
       </div>
