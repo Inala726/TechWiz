@@ -112,7 +112,7 @@
     height: 70px;
     padding-top: 10px;
     padding-left: 25px;
-    border: solid 2px;
+    /* border: solid 2px; */
     /* background-color: green; */
   }
   .navList::after{
