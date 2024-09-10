@@ -9,7 +9,7 @@ const Hero = (props) => {
         backgroundImage: `url(${props.background})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundPosition: `${props.bcPosition}`
+        backgroundPosition: "center"
     }}>
         <Navbar/>
     </div>
