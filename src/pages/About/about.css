@@ -19,7 +19,7 @@
 .img{
     width: 43%;
     height: 400px;
-    border: solid rgb(247, 170, 247);
+    /* border: solid rgb(247, 170, 247); */
     border-radius: 10px;
 }
 .img img{
@@ -38,6 +38,12 @@
 .h2{
     font-size: 28px;
     color: burlywood;
+}
+.button{
+    width: 24%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
 }
 .leftWhat{
     width: 43%;
