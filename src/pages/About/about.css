@@ -94,6 +94,9 @@
 @media screen and (max-width: 800px) {
     .best{
         /* display: flex; */
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .aboutText, .img, .leftWhat, .rightWhat{
+        width: 95%;
     }
 }
