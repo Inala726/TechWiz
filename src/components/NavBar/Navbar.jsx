@@ -18,7 +18,7 @@ export const Navbar = () => {
           <NavLink
             to="/"
             style={({ isActive }) => {
-              return isActive ? { color: "blue" } : { color: "black" };
+              return isActive ? { color: "white" } : { color: "gray" };
             }}
           >
             <li>Home</li>
@@ -26,7 +26,7 @@ export const Navbar = () => {
           <NavLink
             to="/services"
             style={({ isActive }) => {
-              return isActive ? { color: "blue" } : { color: "black" };
+              return isActive ? { color: "white" } : { color: "gray" };
             }}
           >
             <li>Services</li>
@@ -34,7 +34,7 @@ export const Navbar = () => {
           <NavLink
             to="/aboutUs"
             style={({ isActive }) => {
-              return isActive ? { color: "blue" } : { color: "black" };
+              return isActive ? { color: "white" } : { color: "gray" };
             }}
           >
             <li>About Us</li>
@@ -42,7 +42,7 @@ export const Navbar = () => {
           <NavLink
             to="/contactUs"
             style={({ isActive }) => {
-              return isActive ? { color: "blue" } : { color: "black" };
+              return isActive ? { color: "white" } : { color: "gray" };
             }}
           >
             <li>Contact Us</li>
