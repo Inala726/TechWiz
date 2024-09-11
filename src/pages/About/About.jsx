@@ -2,18 +2,18 @@ import React from 'react'
 import "./about.css"
 // import { Hero } from '../../components/HeroSection/Hero'
 import { Navbar } from '../../components/NavBar/Navbar'
-// import About from '../../assets'
+import About from '../../assets/pexels-pixabay-208321.jpg'
 
 const About = () => {
   return (
     <>
 
     <div className="aboutDiv">
-    <Navbar/>
-        {/* <Hero theme="About Us" content="Learn more about us"/> */}
+    {/* <Navbar/> */}
+        <Hero theme="About Us" content="Learn more about us"/>
         <div className="best">
             <div className="img">
-                {/* <img src={About} alt="" /> */}
+                <img src={About} alt="" />
             </div>
             <div className="aboutText">
                 <h4>Our Company</h4>

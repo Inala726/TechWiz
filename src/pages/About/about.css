@@ -39,6 +39,12 @@
     font-size: 28px;
     color: burlywood;
 }
+.button{
+    width: 24%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
 .leftWhat{
     width: 43%;
     height: 320px;
