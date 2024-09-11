@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import { Hero } from '../../components/HeroSection/Hero'
+// import { Hero } from '../../components/HeroSection/Hero'
 import { Navbar } from '../../components/NavBar/Navbar'
 import AboutImage from '../../assets/pexels-pixabay-208321.jpg'
 
@@ -10,7 +10,7 @@ const About = () => {
 
     <div className="aboutDiv">
     {/* <Navbar/> */}
-        <Hero theme="About Us" content="Learn more about us"/>
+        {/* <Hero theme="About Us" content="Learn more about us"/> */}
         <div className="best">
             <div className="img">
                 <img src={AboutImage} alt="" />
