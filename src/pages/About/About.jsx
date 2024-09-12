@@ -11,8 +11,14 @@ const About = () => {
     <div className="aboutDiv">
         <Hero theme="About Us" content="Learn more about us"/>
         <div className="best">
-            <div className="img">
-                <img src={AboutImage} alt="" />
+            <div className="img" style={{
+              backgroundImage: `url(${AboutImage})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover"
+            }}>
+              <div className="imgOverlay">
+              
+              </div>
             </div>
             <div className="aboutText">
                 <h4>Our Company</h4>
@@ -53,12 +59,15 @@ const About = () => {
         <div className="why" style={{
           backgroundImage: `url(${AboutImage})`,
           backgroundPosition: "center",
-          backgroundSize: "cover"
+          backgroundSize: "cover",
+          backgroundBlendMode: "darken"
         }}>
-
+              <div className="whyOverlay">
+                
           <h4>Lorem ipsum dolor sit amet.</h4>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi excepturi reiciendis delectus dignissimos cum praesentium?</p>
           <button>Contact us</button>
+              </div>
 
         </div>
     </div>

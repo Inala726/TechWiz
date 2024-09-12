@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-blend-mode: overlay;
 }
 .heroText{
     width: 47%;

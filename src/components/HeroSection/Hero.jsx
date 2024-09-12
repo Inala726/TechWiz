@@ -10,7 +10,8 @@ const Hero = (props) => {
         backgroundImage: `url(${props.background})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundPosition: "center"
+        backgroundPosition: "center",
+        backgroundBlendMode: "overlay"
     }}>
         <Navbar/>
         <div className="heroText">

@@ -1,8 +1,8 @@
 .aboutDiv{
     width: 100%;
     height: max-content;
-    /* background-color: rgb(10, 10, 10); */
-    /* color: whitesmoke; */
+    /* background-color: rgb(10, 10, 10);
+    color: whitesmoke; */
     color: black;
     display: flex;
     flex-direction: column;
@@ -24,10 +24,10 @@
     /* border: solid rgb(247, 170, 247); */
     border-radius: 7px;
 }
-.img img{
+.imgOverlay{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.342);
     border-radius: 7px;
 }
 .aboutText{
@@ -82,6 +82,27 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    color: whitesmoke;
+}
+.whyOverlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.whyOverlay button{
+   width: max-content;
+   /* height: 40px; */
+   padding: 12px;
+   border-radius: 5px;
+   border: none;
+   font-weight: 500;
 }
 
 @media screen and (max-width: 1000px) {
