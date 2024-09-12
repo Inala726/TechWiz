@@ -2,6 +2,7 @@ import React from 'react'
 import "./about.css"
 import AboutImage from '../../assets/pexels-pixabay-208321.jpg'
 import Hero from '../../components/HeroSection/Hero'
+import { CgEnter } from 'react-icons/cg'
 
 const About = () => {
   return (
@@ -49,7 +50,17 @@ const About = () => {
               </div>
            </div>
         </div>
-        <div className="why"></div>
+        <div className="why" style={{
+          backgroundImage: `url(${AboutImage})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover"
+        }}>
+
+          <h4>Lorem ipsum dolor sit amet.</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi excepturi reiciendis delectus dignissimos cum praesentium?</p>
+          <button>Contact us</button>
+
+        </div>
     </div>
       
     </>
